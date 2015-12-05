@@ -2,11 +2,12 @@ import unittest
 
 import insert_sort
 import bubble_sort
+import select_sort
 
 class SortTest(unittest.TestCase):
 
     def setUp(self):
-        self.sut = insert_sort.InsertSort()
+        pass
 
     def test_insert_sort_descending(self):
         arr = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
@@ -64,6 +65,33 @@ class SortTest(unittest.TestCase):
         expect = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         self.assertEqual(expect, arr)
 
+    def test_select_sort_descending(self):
+        arr = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+        select_sort.SelectSort.sort(arr)
+
+        expect = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        self.assertEqual(expect, arr)
+
+    def test_select_sort_ascending(self):
+        arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        select_sort.SelectSort.sort(arr)
+
+        expect = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        self.assertEqual(expect, arr)
+
+    def test_select_sort_2kinds(self):
+        arr = [1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+        select_sort.SelectSort.sort(arr)
+
+        expect = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2]
+        self.assertEqual(expect, arr)
+
+    def test_select_sort_random(self):
+        arr = [8, 3, 7, 2, 10, 1, 4, 9, 5, 6]
+        select_sort.SelectSort.sort(arr)
+
+        expect = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        self.assertEqual(expect, arr)
 
 if __name__ == '__main__':
     unittest.main()
