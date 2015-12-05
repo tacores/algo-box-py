@@ -1,7 +1,8 @@
 
 class InsertSort(object):
 
-    def sort(self, arr):
+    @staticmethod
+    def sort(arr):
         for i in range(1, len(arr)):
             j = i - 1
             v = arr[i]
