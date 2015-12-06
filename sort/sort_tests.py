@@ -13,7 +13,7 @@ class SortTest(unittest.TestCase):
         self.asc_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         self.asc_expect = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-        self.random_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        self.random_arr = [8, 4, 2, 1, 10, 6, 3, 9, 5, 7]
         self.random_expect = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
         self.two_kinds_arr = [1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
