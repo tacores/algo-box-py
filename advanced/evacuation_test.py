@@ -6,7 +6,7 @@ import unittest
 def add_edge(graph, s, t, capa):
     graph.add_edge(s - 1, t - 1, capa)
 
-class kmp_test(unittest.TestCase):
+class evacuation_test(unittest.TestCase):
 
     def test_sample1(self):
         graph = FlowGraph(5)
