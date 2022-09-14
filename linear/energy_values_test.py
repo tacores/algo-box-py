@@ -4,7 +4,7 @@ import unittest
 import math
 import numpy as np
 
-class kmp_test(unittest.TestCase):
+class energy_values_test(unittest.TestCase):
 
     def test_SolveEquation_sample1(self):
         param = []
