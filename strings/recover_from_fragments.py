@@ -167,14 +167,10 @@ def read_data(N):
 def execute(reads):
     srff = string_recovery_from_fragments()
     s = srff.recover(reads)
-    #print(s)
     return s
 
 if __name__ == '__main__':
     N = 1618
-#    N = 3
     reads = read_data(N)
-    srff = string_recovery_from_fragments()
-    s = srff.recover(reads)
+    s = execute(reads)
     print(s)
-
