@@ -53,12 +53,10 @@ class w1_rob_test(unittest.TestCase):
         """
         N = 1618
         ln = 100
-        #N = 100
-        #ln = 8
         s = gen_str(int(N * ln / 10))
         reads = gen_fragment(s, ln, N)
 
-        #self.assertEqual(len(execute(reads)), len(s))
+        self.assertEqual(len(execute(reads)), len(s))
 
 
 if __name__ == '__main__':
