@@ -44,7 +44,7 @@ class w2_1_test(unittest.TestCase):
         self.assertEqual(solve(squares), expected)
 
 
-    def test_solve_sample1_revert(self):
+    def test_solve_sample1_reverse(self):
         squares = []
         squares.append(Square('black', 'black', 'green', 'red')) #0
         squares.append(Square('black', 'red', 'green', 'blue')) #1
