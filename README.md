@@ -3,11 +3,12 @@ Pythonによるアルゴリズム集
 
 # 構成
 * graph
-    * airline_crews.py  ・・二部グラフ（Bipartite）の最大マッチング
+    * airline_crews.py  ・・・二部グラフ（Bipartite）の最大マッチング
     * astar_dist_with_coords.py3    ・・・XY平面上のA*アルゴリズム
     * bfs.py    ・・・幅優先探索
     * clustering.py
     * dijkstra.py
+    * eulerian_cycle    ・・・オイラーサイクル（全エッジを1回ずつ通る）の探索
     * evacuation.py
     * friend_suggestion.py3
     * kruskal.py
