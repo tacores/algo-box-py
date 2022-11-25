@@ -10,6 +10,7 @@ Pythonによるアルゴリズム集
     * dijkstra.py
     * eulerian_cycle    ・・・オイラーサイクル（全エッジを1回ずつ通る）の探索
     * evacuation.py
+    * find_circulation  ・・・最低流量が設定された有向グラフでのフローサイクル探索
     * friend_suggestion.py3
     * kruskal.py
     * negative_cycle.py
